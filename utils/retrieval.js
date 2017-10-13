@@ -5,15 +5,17 @@
 
 const nodeConfig = require('../config/nodes.json');
 
-let getConfig = function(nodeName){
+let getConfig = function(node){
 
     // Traverse node configuration file, assigning nodeName to root of key.
     for (let nodeName in nodeConfig){
-        let nodeInfo = nodeConfig[nodeName];
-        let ip = nodeInfo.ip;
-        let username = nodeInfo.username;
-        let password = nodeInfo.password;
-        let os = nodeInfo.os;
+        if(nodeName === node) {
+            let nodeInfo = nodeConfig[nodeName];
+            let ip = nodeInfo.ip;
+            let username = nodeInfo.username;
+            let password = nodeInfo.password;
+            let os = nodeInfo.os;
+        }
     }
 };
 
