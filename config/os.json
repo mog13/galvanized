@@ -1,0 +1,14 @@
+{
+  "ios":{
+    "command": "show running-configuration"
+  },
+  "junos":{
+    "command": "show configuration"
+  },
+  "panos":{
+    "command": "show config"
+  },
+  "vyos":{
+    "command": "show configuration"
+  }
+}
