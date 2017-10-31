@@ -10,5 +10,8 @@
   },
   "vyos":{
     "command": "show configuration"
+  },
+  "EXOS":{
+    "command": "show config"
   }
 }
